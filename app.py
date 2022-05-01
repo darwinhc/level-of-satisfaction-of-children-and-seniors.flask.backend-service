@@ -20,7 +20,7 @@ FIELDS_SENIOR = loads(getenv('FIELDS_SENIOR'))
 MESSAGE_NO_FIELD = getenv("MESSAGE_NO_FIELD", "Fields are required to predict")
 
 
-@app.route("/children", methods=["POST"])
+@app.route("/child", methods=["POST"])
 def predict_child():
     data = collect_data(request.json, FIELDS_CHILD)
     if data is None:

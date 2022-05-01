@@ -10,7 +10,7 @@ from src.load_model import load_model
 
 
 app = Flask(__name__)
-CORS(app, resources={r"*": {"origins": "*"}})
+CORS(app)
 MODEL_CHILD = load_model('models/' + getenv('MODEL_CHILD'))
 FIELDS_CHILD = loads(getenv('FIELDS_CHILD'))
 

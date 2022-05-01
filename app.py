@@ -25,7 +25,7 @@ def predict_child():
     data = collect_data(request.json, FIELDS_CHILD)
     if data is None:
         abort(400)
-    return {"prediction": MODEL_CHILD.predict(data)[0]}
+    return {"prediction": int(MODEL_CHILD.predict(data)[0])}
 
 
 @app.route("/senior", methods=["POST"])

@@ -9,8 +9,6 @@ def collect_data(container: dict, fields):
     for field in fields:
         if field not in container:
             return
-        if not container[field].isdigit():
-            return
         buffer[0].append(container[field])
 
     return array(buffer).reshape(-1, len(fields))

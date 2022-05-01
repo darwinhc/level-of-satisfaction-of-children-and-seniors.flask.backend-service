@@ -3,13 +3,14 @@ from json import loads
 from os import getenv
 
 from flask import Flask, request, abort
+from flask_cors import CORS, cross_origin
 # Local
 from src.collect_data import collect_data
 from src.load_model import load_model
 
 
 app = Flask(__name__)
-
+CORS(app)
 MODEL_CHILD = load_model('models/' + getenv('MODEL_CHILD'))
 FIELDS_CHILD = loads(getenv('FIELDS_CHILD'))
 

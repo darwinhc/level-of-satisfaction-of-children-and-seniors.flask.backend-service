@@ -7,7 +7,7 @@ Se hace uso de dos modelos de inteligencia artifical (niños y adultos mayores) 
 Use la API realizando peticiones POST a la siguiente ruta 
 
 ~~~
-RUTA
+https://modelo-satisfaccion-vida.herokuapp.com/
 ~~~
 
 ### Niños

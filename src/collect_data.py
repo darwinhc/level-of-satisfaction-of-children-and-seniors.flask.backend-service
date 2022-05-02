@@ -1,5 +1,5 @@
 """Implementation of the function 'collect_data'."""
-from numpy import array
+from numpy import array, float64
 
 
 def collect_data(container: dict, fields):
@@ -11,4 +11,4 @@ def collect_data(container: dict, fields):
             return
         buffer[0].append(container[field])
 
-    return array(buffer).reshape(-1, len(fields))
+    return array(buffer, dtype=float64).reshape(-1, len(fields))

@@ -51,3 +51,12 @@ Se le deben enviar las siguientes características todas en número
 * satisfaccion_tiempo_libre
 
 En caso de que no se envie uno de estos datos, la API responderá con un error con codigo 400
+
+
+## Acerca de la creación
+
+Este componente backend de la aplicación está creado con el framework minimalista de flask. Para saber más a cerca de Flask
+
+- [Documentación de Flask](https://flask.palletsprojects.com/en/2.1.x/)
+- [Inicio rapido](https://flask.palletsprojects.com/en/2.1.x/quickstart/)
+
